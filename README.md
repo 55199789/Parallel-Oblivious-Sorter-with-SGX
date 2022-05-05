@@ -11,7 +11,7 @@ make clean && make
 ./app numberOfRandomIntegers
 ```
 
-##Remarks
+## Remarks
 * The ECall funcion support only ``int`` type, however, the sorter does support any numeric types and self-defined class satisfying:
   * bool operator>(const Type &) const;
   * It does not contain any pointer pointing to the actual data, since we use sizeof to evaluate each element size, meanning that it does not support raw strings or STL containers. However, you could modify the implementation with small efforts. 
