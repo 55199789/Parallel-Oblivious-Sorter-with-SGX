@@ -19,7 +19,7 @@ make clean && make
   * For single thread,it usually takes $5~7\times$ time of the ``std::sort``. 
   * For 4 threads, it only takes $2~3\times$ running time of ``std::sort``. 
 * The actual threads it uses is the maximal 2 exponential of the macro THREAD_NUM (i.e., we actually use only 4 out of THREAD_NUM = 6). In addition, I did not figure out why it goes wrong when THREAD_NUM >=8. 
-
+* The speed up factor is not proportional to the number of threads
 * Temporarily, I believe the bitonic sorter is the best among all oblivious and differentially oblbvious sorters (under the setting combing SGX). All the other sorters are worse than bitonic sorter (but better theoritical guarantees), including 
   * [Bucket Oblivious Sort: An Extremely Simple Oblivious Sort](https://arxiv.org/abs/2008.01765)
     * I also implemented it (but only works for arrays smaller than 90MB) in another repo. Even the entire array fits into the EPC, the ORP key tagging/removing process is quite inefficient, and we also require the oblivious sort inside the enclave, i.e., $~2n\log n\log^2 Z runtime. 
