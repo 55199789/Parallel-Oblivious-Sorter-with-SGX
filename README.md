@@ -1,4 +1,4 @@
-# Parallel-Oblivious-Sorter-with-SGX
+# Parallel Oblivious Sorter with SGX
 Parallel bitonic sorter with limited Intel SGX enclave page cache (default 80MB). 
 
 ## Compile and Run 
