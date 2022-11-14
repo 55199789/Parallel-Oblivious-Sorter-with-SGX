@@ -32,8 +32,6 @@
 #include <stdarg.h>
 #include <stdio.h>      /* vsnprintf */
 #include <string.h>
-#include <functional>
-#include <vector>
 #include <thread>
 #include <algorithm>
 #include <chrono>
@@ -359,11 +357,11 @@ void bitonicSortParallel(Key *secureBuf, uint32_t secureBufSize,
         lvl++;
     }
     threadNum>>=1;
-    if(threadNum==1)
-    {
-        bitonicSortEx<Key>(secureBuf, secureBufSize, cArr, 0, cnt, 1); 
-        return;
-    }
+    // if(threadNum==1)
+    // {
+    //     bitonicSortEx<Key>(secureBuf, secureBufSize, cArr, 0, cnt, 1); 
+    //     return;
+    // }
 
     // bitonicSort each interval
     uint32_t st[threadNum];
