@@ -41,21 +41,19 @@ enclave {
      */
       
     from "sgx_tstdc.edl" import *;
+    from "sgx_pthread.edl" import *; 
     from "sgx_tswitchless.edl" import *;
 
-
     trusted {
-        public void ecall_ObliviousSort([user_check] int *cArr, uint32_t cnt);
         public void ecall_DPSort([user_check] int *cArr, 
                     uint32_t cnt, double epsilon);
+        public void ecall_ObliviousSort([user_check] int *cArr, uint32_t cnt);
         public void ecall_OneByOne([user_check] int *pArr, [user_check] int *cArr, 
                     uint32_t cnt);
         public sgx_status_t ecallEncryptArr([user_check] uint8_t* pSrc, 
                             [user_check] uint8_t* pDst, uint32_t cipher_len);
         public sgx_status_t ecallDecryptArr([user_check] uint8_t* pSrc, 
                             [user_check] uint8_t* pDst, uint32_t cipher_len);
-        public void ecall_loop(int tid);
-        public void ecall_threads_down(void);
     };
 
     /* 

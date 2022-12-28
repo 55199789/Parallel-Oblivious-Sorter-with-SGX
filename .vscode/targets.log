@@ -1,312 +1,246 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
+# make[1]: Entering directory '/home/leqian/Parallel-Oblivious-Sorter-with-SGX'
+# GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 22 19:39:49 2022
+# Make data base, printed on Tue Dec 27 18:55:26 2022
 
 # Variables
 
-# makefile (from 'Makefile', line 69)
-SGX_COMMON_FLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls
-# environment
-GDK_BACKEND = x11
-# environment
-LC_ALL = C
-# environment
-GNOME_SHELL_SESSION_MODE = ubuntu
-# makefile (from 'Makefile', line 37)
-SGX_DEBUG = 1
-# makefile (from 'Makefile', line 141)
-Enclave_C_Flags := -nostdinc -fvisibility=hidden -fpie -fstack-protector -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc  -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
-# makefile (from 'Makefile', line 137)
-Enclave_Include_Paths := -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc 
-# environment
-GJS_DEBUG_OUTPUT = stderr
-# makefile (from 'Makefile', line 35)
-SGX_MODE = HW
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1cde377a-3169-4be7-96b5-826f896e7b5d.sock
-# environment
-LC_NAME = en_HK.UTF-8
-# environment
-LC_NUMERIC = en_HK.UTF-8
-# environment
-VSCODE_CWD = /home/cs-leqizheng2-1
-# environment
-SGX_SDK = /opt/intel/sgxsdk
-# environment
-WINDOWPATH = 2
-# makefile (from 'Makefile', line 85)
-App_Include_Paths := -IApp -I/opt/intel/sgxsdk/include
-# makefile (from 'Makefile', line 143)
-Enclave_Security_Link_Flags := -Wl,-z,relro,-z,now,-z,noexecstack
-# environment
-LC_ADDRESS = en_HK.UTF-8
-# default
-MAKE_COMMAND := make
-# environment
-QT_ACCESSIBILITY = 1
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# makefile (from 'Makefile', line 164)
-Signed_Enclave_Name := enclave.signed.so
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# environment
-PWD = /home/cs-leqizheng2-1/codes/Parallel-Oblivious-Sorter-with-SGX
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# makefile (from 'Makefile', line 134)
-Crypto_Library_Name := sgx_tcrypto
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = /home/cs-leqizheng2-1/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
-# environment
-LANG = C
-# environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
-# default
-.LOADED := 
-# default
-.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
-# makefile
-MAKEFLAGS = pqrR
-# environment
-PKG_CONFIG_PATH = :/opt/intel/sgxsdk/pkgconfig
-# makefile
-CURDIR := /home/cs-leqizheng2-1/codes/Parallel-Oblivious-Sorter-with-SGX
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-MFLAGS = -pqrR
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# default
-.SHELLFLAGS := -c
-# makefile (from 'Makefile', line 131)
-Trts_Library_Name := sgx_trts
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# environment
-XDG_SESSION_DESKTOP = ubuntu
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
-# automatic
-@F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 165)
-Enclave_Config_File := Enclave/Enclave.config.xml
-# environment
-VSCODE_PID = 749142
-# environment
-XDG_SESSION_TYPE = x11
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# makefile (from 'Makefile', line 74)
-SGX_COMMON_CXXFLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17
-# environment
-SESSION_MANAGER = local/cs-leqizheng2-1:@/tmp/.ICE-unix/2270,unix/cs-leqizheng2-1:/tmp/.ICE-unix/2270
-# automatic
-*F = $(notdir $*)
-# makefile (from 'Makefile', line 163)
-Enclave_Name := enclave.so
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
-# makefile
-SHELL = /bin/sh
-# default
-MAKECMDGOALS := all
-# environment
-XMODIFIERS = @im=fcitx
-# environment
-LD_LIBRARY_PATH = /opt/intel/sgxsdk/sdk_libs
-# environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-SHLVL = 0
-# makefile (from 'Makefile', line 140)
-Enclave_Cpp_Flags := -nostdinc -fvisibility=hidden -fpie -fstack-protector -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc   -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17 -nostdinc++
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-PATH = /home/cs-leqizheng2-1/.local/bin:/home/cs-leqizheng2-1/.cargo/bin:/home/cs-leqizheng2-1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/cs-leqizheng2-1/.local/bin:/opt/intel/sgxsdk/bin:/opt/intel/sgxsdk/bin/x64
-# default
-MAKEFILES := 
-# environment
-LANGUAGE = en_US:en
-# makefile (from 'Makefile', line 108)
-App_Name := app
-# environment
-LC_MONETARY = en_HK.UTF-8
-# automatic
-^F = $(notdir $^)
-# makefile (from 'Makefile', line 132)
-Service_Library_Name := sgx_tservice
-# environment
-LC_TIME = en_HK.UTF-8
-# makefile (from 'Makefile', line 52)
-SGX_LIBRARY_PATH := /opt/intel/sgxsdk/lib64
-# environment
-INVOCATION_ID = 845e8fa02838499f90ff37122e49fde7
-# makefile (from 'Makefile', line 81)
-Urts_Library_Name := sgx_urts
-# makefile (from 'Makefile', line 136)
-Enclave_Cpp_Files := Enclave/Enclave.cpp
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-USERNAME = cs-leqizheng2-1
-# environment
-LC_TELEPHONE = en_HK.UTF-8
-# environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
 # automatic
 ?F = $(notdir $?)
-# makefile (from 'Makefile', line 169)
-Build_Mode = HW_DEBUG
-# makefile (from 'Makefile', line 112)
-App_Link_Flags := -L/opt/intel/sgxsdk/lib64 -Wl,--whole-archive  -lsgx_uswitchless -Wl,--no-whole-archive -lsgx_urts -lpthread -ltbb -lsgx_uae_service
-# makefile (from 'Makefile', line 84)
-App_Cpp_Files := App/App.cpp 
 # environment
-GTK_IM_MODULE = fcitx
-# makefile (from 'Makefile', line 101)
-App_Cpp_Flags := -fPIC -Wno-attributes -IApp -I/opt/intel/sgxsdk/include -DDEBUG -UNDEBUG -UEDEBUG -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17
-# environment
-XDG_CURRENT_DESKTOP = Unity
-# environment
-LS_COLORS = 
-# automatic
-+F = $(notdir $+)
-# environment
-DESKTOP_SESSION = ubuntu
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
-# 'override' directive
-GNUMAKEFLAGS := 
-# environment
-CLUTTER_IM_MODULE = fcitx
-# environment
-LOGNAME = cs-leqizheng2-1
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
-# makefile (from 'Makefile', line 73)
-SGX_COMMON_CFLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
-# makefile
-.DEFAULT_GOAL := all
-# environment
-DISPLAY = :1
-# environment
-USER = cs-leqizheng2-1
-# environment
-GTK_MODULES = gail:atk-bridge
+PAPERSIZE = letter
+# makefile (from 'Makefile', line 152)
+Enclave_Link_Flags := -Wl,-z,relro,-z,now,-z,noexecstack -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L/opt/intel/sgxsdk/lib64 -Wl,--whole-archive -lsgx_tswitchless -lsgx_trts -Wl,--no-whole-archive -Wl,--start-group -lsgx_tstdc -lsgx_pthread -lsgx_omp -lsgx_tcxx -lsgx_tcrypto -lsgx_tservice -Wl,--end-group -Wl,-Bstatic -Wl,-Bsymbolic -Wl,--no-undefined -Wl,-pie,-eenclave_entry -Wl,--export-dynamic -Wl,--defsym,__ImageBase=0 -Wl,--gc-sections -Wl,--version-script=Enclave/Enclave.lds
+# makefile (from 'Makefile', line 35)
+SGX_MODE = HW
 # default
-MAKE_VERSION := 4.3
-# 'override' directive
-.SHELLSTATUS := 0
-# environment
-MANAGERPID = 2048
-# environment
-LC_MEASUREMENT = en_HK.UTF-8
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 749142
-# environment
-SSH_AGENT_PID = 2230
-# environment
-_ = /usr/share/code/code
-# environment
-LC_PAPER = en_HK.UTF-8
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+.SHELLFLAGS := -c
 # makefile (from 'Makefile', line 36)
 SGX_ARCH = x64
 # environment
-JOURNAL_STREAM = 8:51429
-# environment
 XDG_SESSION_CLASS = user
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# makefile (from 'Makefile', line 161)
-Enclave_Cpp_Objects := Enclave/Enclave.o
+VSCODE_AGENT_FOLDER = /home/leqian/.vscode-server
 # environment
-HOME = /home/cs-leqizheng2-1
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 106)
+App_Cpp_Objects := App/App.o
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 131)
+Trts_Library_Name := sgx_trts
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile (from 'Makefile', line 81)
+Urts_Library_Name := sgx_urts
+# makefile
+CURDIR := /home/leqian/Parallel-Oblivious-Sorter-with-SGX
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 132)
+Service_Library_Name := sgx_tservice
 # environment
-QT_IM_MODULE = fcitx
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"f45d28db2b892ef5d3a7efebc519f640.zh-cn","_translationsConfigFile":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn/tcf.json","_cacheRoot":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn","_resolvedLanguagePackCoreLocation":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn/e8a3071ea4344d9d48ef8a4df2c097372b0c5161","_corruptedFile":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn/corrupted.info","_languagePackSupport":true}
+# makefile (from 'Makefile', line 164)
+Signed_Enclave_Name := enclave.signed.so
+# environment
+_ = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node
+# makefile (from 'Makefile', line 102)
+App_C_Flags := -fPIC -Wno-attributes -IApp -I/opt/intel/sgxsdk/include -DDEBUG -UNDEBUG -UEDEBUG -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MAKELEVEL := 1
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'Makefile', line 134)
+Crypto_Library_Name := sgx_tcrypto
+# makefile (from 'Makefile', line 137)
+Enclave_Include_Paths := -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc 
+# makefile (from 'Makefile', line 169)
+Build_Mode = HW_DEBUG
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/leqian
+# environment
+SGX_SDK = /opt/intel/sgxsdk
+# environment
+SSH_CONNECTION = 10.37.1.118 59850 192.168.31.237 22
+# environment
+PATH = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/leqian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/intel/sgxsdk/bin:/opt/intel/sgxsdk/bin/x64
+# makefile (from 'Makefile', line 101)
+App_Cpp_Flags := -fPIC -Wno-attributes -IApp -I/opt/intel/sgxsdk/include -DDEBUG -UNDEBUG -UEDEBUG -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 84)
+App_Cpp_Files := App/App.cpp 
+# makefile (from 'Makefile', line 143)
+Enclave_Security_Link_Flags := -Wl,-z,relro,-z,now,-z,noexecstack
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-15183c33-1.68.1-main.sock
-# makefile (from 'Makefile', line 152)
-Enclave_Link_Flags := -Wl,-z,relro,-z,now,-z,noexecstack -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L/opt/intel/sgxsdk/lib64 -Wl,--whole-archive  -lsgx_tswitchless -lsgx_trts -Wl,--no-whole-archive -Wl,--start-group -lsgx_tstdc -lsgx_tcxx -lsgx_tcrypto -lsgx_tservice -Wl,--end-group -Wl,-Bstatic -Wl,-Bsymbolic -Wl,--no-undefined -Wl,-pie,-eenclave_entry -Wl,--export-dynamic -Wl,--defsym,__ImageBase=0 -Wl,--version-script=Enclave/Enclave.lds
-# environment
-IM_CONFIG_PHASE = 1
-# environment
-PAPERSIZE = a4
-# makefile (from 'Makefile', line 53)
-SGX_ENCLAVE_SIGNER := /opt/intel/sgxsdk/bin/x64/sgx_sign
-# makefile (from 'Makefile', line 117)
- 
-Enclave_Version_Script := Enclave/Enclave_debug.lds
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-67fc6678-ebff-430d-9dfa-772cb613fe7a.sock
 # default
-.RECIPEPREFIX := 
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 112)
+App_Link_Flags := -L/opt/intel/sgxsdk/lib64 -Wl,--whole-archive  -lsgx_uswitchless -Wl,--no-whole-archive -lsgx_urts -lpthread -lsgx_uae_service
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 52)
+SGX_LIBRARY_PATH := /opt/intel/sgxsdk/lib64
+# environment
+PWD = /home/leqian/Parallel-Oblivious-Sorter-with-SGX
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PKG_CONFIG_PATH = :/opt/intel/sgxsdk/pkgconfig
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/leqian
+# makefile (from 'Makefile', line 163)
+Enclave_Name := enclave.so
+# environment
+LD_LIBRARY_PATH = /opt/intel/sgxsdk/sdk_libs
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = leqian
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 85)
+App_Include_Paths := -IApp -I/opt/intel/sgxsdk/include
+# environment
+LC_TIME = en_US.UTF-8
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := target
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 165)
+Enclave_Config_File := Enclave/Enclave.config.xml
+# environment
+XDG_SESSION_ID = 1246
+# environment
+USER = leqian
+# environment
+LC_MONETARY = en_US.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_GB:en
+# makefile (from 'Makefile', line 73)
+SGX_COMMON_CFLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+# makefile (from 'Makefile', line 161)
+Enclave_Cpp_Objects := Enclave/Enclave.o
+# makefile (from 'Makefile', line 69)
+SGX_COMMON_FLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls
+# makefile
+MAKEFLAGS = pqrRw
+# environment
+MFLAGS = -pqrRw
+# environment
+SSH_CLIENT = 10.37.1.118 59850 22
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 141)
+Enclave_C_Flags := -nostdinc -fvisibility=hidden -fpie -fstack-protector -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc  -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+# environment
+BROWSER = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh
+# makefile (from 'Makefile', line 37)
+SGX_DEBUG = 1
+# makefile (from 'Makefile', line 74)
+SGX_COMMON_CXXFLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = en_US.UTF-8
 # automatic
 <F = $(notdir $<)
+# makefile (from 'Makefile', line 108)
+App_Name := app
+# automatic
+^F = $(notdir $^)
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+LC_ALL = C
+# environment
+LC_PAPER = en_US.UTF-8
 # default
 SUFFIXES := 
+# makefile (from 'Makefile', line 53)
+SGX_ENCLAVE_SIGNER := /opt/intel/sgxsdk/bin/x64/sgx_sign
+# makefile (from 'Makefile', line 140)
+Enclave_Cpp_Flags := -nostdinc -fvisibility=hidden -fpie -fstack-protector -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc   -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17 -nostdinc++ -fopenmp
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
-# makefile (from 'Makefile', line 106)
-App_Cpp_Objects := App/App.o
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-QT4_IM_MODULE = fcitx
+LC_IDENTIFICATION = en_US.UTF-8
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 136)
+Enclave_Cpp_Files := Enclave/Enclave.cpp
 # environment
-XDG_MENU_PREFIX = gnome-
-# makefile (from 'Makefile', line 102)
-App_C_Flags := -fPIC -Wno-attributes -IApp -I/opt/intel/sgxsdk/include -DDEBUG -UNDEBUG -UEDEBUG -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+LC_ADDRESS = en_US.UTF-8
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
 # makefile (from 'Makefile', line 54)
 SGX_EDGER8R := /opt/intel/sgxsdk/bin/x64/sgx_edger8r
 # environment
-GDMSESSION = ubuntu
+LANG = C
+# makefile (from 'Makefile', line 117)
+Enclave_Version_Script := Enclave/Enclave_debug.lds
 # environment
-LC_IDENTIFICATION = en_HK.UTF-8
+MOTD_SHOWN = pam
 # variable set hash-table stats:
-# Load=147/1024=14%, Rehash=0, Collisions=17/263=6%
+# Load=114/1024=11%, Rehash=0, Collisions=25/221=11%
 
 # Pattern-specific Variable Values
 
@@ -314,12 +248,12 @@ LC_IDENTIFICATION = en_HK.UTF-8
 
 # Directories
 
-# App (device 2050, inode 54659319): No files, no impossibilities so far.
-# . (device 2050, inode 44599725): 10 files, no impossibilities.
+# App (device 66307, inode 14681023): 2 files, no impossibilities so far.
+# . (device 66307, inode 13780244): 14 files, no impossibilities.
+# Enclave (device 66307, inode 14681027): 10 files, no impossibilities so far.
 # App/TrustedLibrary: could not be stat'd.
-# Enclave (device 2050, inode 54659342): No files, no impossibilities so far.
 
-# 10 files, no impossibilities in 4 directories.
+# 26 files, no impossibilities in 4 directories.
 
 # Implicit Rules
 
@@ -334,88 +268,142 @@ Enclave/%.o: Enclave/%.cpp
 	@echo "CXX  <=  $<"
 
 # 2 implicit rules, 0 (0.0%) terminal.
+
 # Files
-
-Enclave/Enclave_t.h: /opt/intel/sgxsdk/bin/x64/sgx_edger8r Enclave/Enclave.edl
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 246):
-	@cd Enclave && $(SGX_EDGER8R) --trusted ../Enclave/Enclave.edl --search-path ../Enclave --search-path $(SGX_SDK)/include
-	@echo "GEN  =>  $@"
-
-Enclave/Enclave_t.c: Enclave/Enclave_t.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-app: App/Enclave_u.o App/App.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 240):
-	@$(CXX) $^ -o $@ $(App_Link_Flags)
-	@echo "LINK =>  $@"
-
-enclave.signed.so: enclave.so
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 266):
-	@$(SGX_ENCLAVE_SIGNER) sign -key Enclave/Enclave_private_test.pem -enclave $(Enclave_Name) -out $@ -config $(Enclave_Config_File)
-	@echo "SIGN =>  $@"
-
-# Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-05 18:46:23.113612414
-#  File has been updated.
-#  Successfully updated.
-
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 272):
-	@rm -f .config_* $(App_Name) $(Enclave_Name) $(Signed_Enclave_Name) $(App_Cpp_Objects) App/Enclave_u.* $(Enclave_Cpp_Objects) Enclave/Enclave_t.*
 
 App/Enclave_u.h: /opt/intel/sgxsdk/bin/x64/sgx_edger8r Enclave/Enclave.edl
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-12-26 14:54:56.708251064
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 226):
 	@cd App && $(SGX_EDGER8R) --untrusted ../Enclave/Enclave.edl --search-path ../Enclave --search-path $(SGX_SDK)/include
 	@echo "GEN  =>  $@"
 
+Enclave/Enclave_t.c: Enclave/Enclave_t.h
+#  Implicit rule search has been done.
+#  Last modified 2022-12-26 14:54:57.672252499
+#  File has been updated.
+#  Successfully updated.
+
+all: .config_HW_DEBUG_x64
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 188):
+	@$(MAKE) target
+
 # Not a target:
-/opt/intel/sgxsdk/bin/x64/sgx_edger8r:
+App/App.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-12-27 17:59:39.828143934
+#  File has been updated.
+#  Successfully updated.
+
+enclave.so: Enclave/Enclave_t.o Enclave/Enclave.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-12-27 18:51:58.876680946
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 262):
+	@$(CXX) $^ -o $@ $(Enclave_Link_Flags)
+	@echo "LINK =>  $@"
+
+.PHONY: all run target clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-App/Enclave_u.c: App/Enclave_u.h
+# Not a target:
+/opt/intel/sgxsdk/bin/x64/sgx_edger8r:
+#  Implicit rule search has been done.
+#  Last modified 2022-11-15 00:33:36.026082304
+#  File has been updated.
+#  Successfully updated.
+
+Enclave/Enclave_t.h: /opt/intel/sgxsdk/bin/x64/sgx_edger8r Enclave/Enclave.edl
+#  Implicit rule search has not been done.
+#  Last modified 2022-12-26 14:54:57.672252499
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 246):
+	@cd Enclave && $(SGX_EDGER8R) --trusted ../Enclave/Enclave.edl --search-path ../Enclave --search-path $(SGX_SDK)/include
+	@echo "GEN  =>  $@"
+
+Enclave/Enclave.o: Enclave/Enclave.cpp Enclave/Enclave_t.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'Enclave'
+#  Last modified 2022-12-27 18:51:58.800681236
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 256):
+	@$(CXX) $(SGX_COMMON_CXXFLAGS) $(Enclave_Cpp_Flags) -c $< -o $@
+	@echo "CXX  <=  $<"
+
+# Not a target:
+Enclave/Enclave.edl:
+#  Implicit rule search has been done.
+#  Last modified 2022-12-15 16:15:34.806938946
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-12-26 14:55:09.608269969
+#  File has been updated.
+#  Successfully updated.
+
+enclave.signed.so: enclave.so
+#  Implicit rule search has not been done.
+#  Last modified 2022-12-27 18:51:58.908680824
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 266):
+	@$(SGX_ENCLAVE_SIGNER) sign -key Enclave/Enclave_private_test.pem -enclave $(Enclave_Name) -out $@ -config $(Enclave_Config_File)
+	@echo "SIGN =>  $@"
+
+app: App/Enclave_u.o App/App.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-12-27 17:59:41.952144061
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 240):
+	@$(CXX) $^ -o $@ $(App_Link_Flags)
+	@echo "LINK =>  $@"
+
+App/Enclave_u.o: App/Enclave_u.c
+#  Implicit rule search has not been done.
+ 
+#  Last modified 2022-12-26 14:54:56.792251189
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 232):
+	@$(CC) $(SGX_COMMON_CFLAGS) $(App_C_Flags) -c $< -o $@
+	@echo "CC   <=  $<"
+
+App/App.o: App/App.cpp App/Enclave_u.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'App'
+#  Last modified 2022-12-27 17:59:41.880144058
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 236):
+	@$(CXX) $(SGX_COMMON_CXXFLAGS) $(App_Cpp_Flags) -c $< -o $@
+	@echo "CXX  <=  $<"
 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-all: .config_HW_DEBUG_x64
-#  Phony target (prerequisite of .PHONY).
-#  Command line target.
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
-#  recipe to execute (from 'Makefile', line 188):
-	@$(MAKE) target
 
 run: all
 #  Phony target (prerequisite of .PHONY).
@@ -426,27 +414,430 @@ run: all
 	@$(CURDIR)/$(App_Name)
 	@echo "RUN  =>  $(App_Name) [$(SGX_MODE)|$(SGX_ARCH), OK]"
 
-# Not a target:
-App/App.o:
+clean:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-
-App/Enclave_u.o: App/Enclave_u.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 232):
-	@$(CC) $(SGX_COMMON_CFLAGS) $(App_C_Flags) -c $< -o $@
-	@echo "CC   <=  $<"
+#  recipe to execute (from 'Makefile', line 272):
+	@rm -f .config_* $(App_Name) $(Enclave_Name) $(Signed_Enclave_Name) $(App_Cpp_Objects) App/Enclave_u.* $(Enclave_Cpp_Objects) Enclave/Enclave_t.*
 
 Enclave/Enclave_t.o: Enclave/Enclave_t.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-12-26 14:54:57.792252678
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 252):
 	@$(CC) $(SGX_COMMON_CFLAGS) $(Enclave_C_Flags) -c $< -o $@
 	@echo "CC   <=  $<"
+
+target: app enclave.signed.so
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := target
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := app enclave.signed.so
+# automatic
+# | := 
+# automatic
+# < := app
+# automatic
+# ^ := app enclave.signed.so
+# automatic
+# ? := app enclave.signed.so
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 201):
+	@echo "The project has been built in debug hardware mode."
+
+# Not a target:
+Enclave/Enclave.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-12-27 18:51:56.432690269
+#  File has been updated.
+#  Successfully updated.
+
+.config_HW_DEBUG_x64:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 220):
+	@rm -f .config_* $(App_Name) $(Enclave_Name) $(Signed_Enclave_Name) $(App_Cpp_Objects) App/Enclave_u.* $(Enclave_Cpp_Objects) Enclave/Enclave_t.*
+	@touch .config_$(Build_Mode)_$(SGX_ARCH)
+
+App/Enclave_u.c: App/Enclave_u.h
+#  Implicit rule search has been done.
+#  Last modified 2022-12-26 14:54:56.708251064
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=24/1024=2%, Rehash=0, Collisions=2/73=3%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 50 / storage = 622 B / avg = 12 B
+# current buf: size = 8162 B / used = 622 B / count = 50 / avg = 12 B
+
+# strcache performance: lookups = 108 / hit rate = 53%
+# hash-table stats:
+# Load=50/8192=1%, Rehash=0, Collisions=3/108=3%
+# Finished Make data base on Tue Dec 27 18:55:26 2022
+
+# make[1]: Leaving directory '/home/leqian/Parallel-Oblivious-Sorter-with-SGX'
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Dec 27 18:55:26 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = letter
+# makefile (from 'Makefile', line 152)
+Enclave_Link_Flags := -Wl,-z,relro,-z,now,-z,noexecstack -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L/opt/intel/sgxsdk/lib64 -Wl,--whole-archive -lsgx_tswitchless -lsgx_trts -Wl,--no-whole-archive -Wl,--start-group -lsgx_tstdc -lsgx_pthread -lsgx_omp -lsgx_tcxx -lsgx_tcrypto -lsgx_tservice -Wl,--end-group -Wl,-Bstatic -Wl,-Bsymbolic -Wl,--no-undefined -Wl,-pie,-eenclave_entry -Wl,--export-dynamic -Wl,--defsym,__ImageBase=0 -Wl,--gc-sections -Wl,--version-script=Enclave/Enclave.lds
+# makefile (from 'Makefile', line 35)
+SGX_MODE = HW
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 36)
+SGX_ARCH = x64
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AGENT_FOLDER = /home/leqian/.vscode-server
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 106)
+App_Cpp_Objects := App/App.o
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 131)
+Trts_Library_Name := sgx_trts
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile (from 'Makefile', line 81)
+Urts_Library_Name := sgx_urts
+# makefile
+CURDIR := /home/leqian/Parallel-Oblivious-Sorter-with-SGX
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 132)
+Service_Library_Name := sgx_tservice
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"f45d28db2b892ef5d3a7efebc519f640.zh-cn","_translationsConfigFile":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn/tcf.json","_cacheRoot":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn","_resolvedLanguagePackCoreLocation":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn/e8a3071ea4344d9d48ef8a4df2c097372b0c5161","_corruptedFile":"/home/leqian/.vscode-server/data/clp/f45d28db2b892ef5d3a7efebc519f640.zh-cn/corrupted.info","_languagePackSupport":true}
+# makefile (from 'Makefile', line 164)
+Signed_Enclave_Name := enclave.signed.so
+# environment
+_ = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node
+# makefile (from 'Makefile', line 102)
+App_C_Flags := -fPIC -Wno-attributes -IApp -I/opt/intel/sgxsdk/include -DDEBUG -UNDEBUG -UEDEBUG -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'Makefile', line 134)
+Crypto_Library_Name := sgx_tcrypto
+# makefile (from 'Makefile', line 137)
+Enclave_Include_Paths := -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc 
+# makefile (from 'Makefile', line 169)
+Build_Mode = HW_DEBUG
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/leqian
+# environment
+SGX_SDK = /opt/intel/sgxsdk
+# environment
+SSH_CONNECTION = 10.37.1.118 59850 192.168.31.237 22
+# environment
+PATH = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/leqian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/intel/sgxsdk/bin:/opt/intel/sgxsdk/bin/x64
+# makefile (from 'Makefile', line 101)
+App_Cpp_Flags := -fPIC -Wno-attributes -IApp -I/opt/intel/sgxsdk/include -DDEBUG -UNDEBUG -UEDEBUG -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 84)
+App_Cpp_Files := App/App.cpp 
+# makefile (from 'Makefile', line 143)
+Enclave_Security_Link_Flags := -Wl,-z,relro,-z,now,-z,noexecstack
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-67fc6678-ebff-430d-9dfa-772cb613fe7a.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 112)
+App_Link_Flags := -L/opt/intel/sgxsdk/lib64 -Wl,--whole-archive  -lsgx_uswitchless -Wl,--no-whole-archive -lsgx_urts -lpthread -lsgx_uae_service
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 52)
+SGX_LIBRARY_PATH := /opt/intel/sgxsdk/lib64
+# environment
+PWD = /home/leqian/Parallel-Oblivious-Sorter-with-SGX
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PKG_CONFIG_PATH = :/opt/intel/sgxsdk/pkgconfig
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/leqian
+# makefile (from 'Makefile', line 163)
+Enclave_Name := enclave.so
+# environment
+LD_LIBRARY_PATH = /opt/intel/sgxsdk/sdk_libs
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = leqian
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 85)
+App_Include_Paths := -IApp -I/opt/intel/sgxsdk/include
+# environment
+LC_TIME = en_US.UTF-8
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 165)
+Enclave_Config_File := Enclave/Enclave.config.xml
+# environment
+XDG_SESSION_ID = 1246
+# environment
+USER = leqian
+# environment
+LC_MONETARY = en_US.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = en_US.UTF-8
+ 
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_GB:en
+# makefile (from 'Makefile', line 73)
+SGX_COMMON_CFLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+# makefile (from 'Makefile', line 161)
+Enclave_Cpp_Objects := Enclave/Enclave.o
+# makefile (from 'Makefile', line 69)
+SGX_COMMON_FLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 10.37.1.118 59850 22
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 141)
+Enclave_C_Flags := -nostdinc -fvisibility=hidden -fpie -fstack-protector -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc  -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants
+# environment
+BROWSER = /home/leqian/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh
+# makefile (from 'Makefile', line 37)
+SGX_DEBUG = 1
+# makefile (from 'Makefile', line 74)
+SGX_COMMON_CXXFLAGS := -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = en_US.UTF-8
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 108)
+App_Name := app
+# automatic
+^F = $(notdir $^)
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+LC_ALL = C
+# environment
+LC_PAPER = en_US.UTF-8
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 53)
+SGX_ENCLAVE_SIGNER := /opt/intel/sgxsdk/bin/x64/sgx_sign
+# makefile (from 'Makefile', line 140)
+Enclave_Cpp_Flags := -nostdinc -fvisibility=hidden -fpie -fstack-protector -IEnclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxsdk/include/libcxx -I/opt/intel/sgxsdk/include/tlibc   -m64 -O2 -g -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wcast-qual -Wconversion -Wredundant-decls -Wnon-virtual-dtor -std=c++17 -nostdinc++ -fopenmp
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 136)
+Enclave_Cpp_Files := Enclave/Enclave.cpp
+# environment
+LC_ADDRESS = en_US.UTF-8
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 54)
+SGX_EDGER8R := /opt/intel/sgxsdk/bin/x64/sgx_edger8r
+# environment
+LANG = C
+# makefile (from 'Makefile', line 117)
+Enclave_Version_Script := Enclave/Enclave_debug.lds
+# environment
+MOTD_SHOWN = pam
+# variable set hash-table stats:
+# Load=114/1024=11%, Rehash=0, Collisions=23/220=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# App (device 66307, inode 14681023): No files, no impossibilities so far.
+# . (device 66307, inode 13780244): 14 files, no impossibilities.
+# Enclave (device 66307, inode 14681027): No files, no impossibilities so far.
+# App/TrustedLibrary: could not be stat'd.
+
+# 14 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+App/%.o: App/%.cpp App/Enclave_u.h
+#  recipe to execute (from 'Makefile', line 236):
+	@$(CXX) $(SGX_COMMON_CXXFLAGS) $(App_Cpp_Flags) -c $< -o $@
+	@echo "CXX  <=  $<"
+
+Enclave/%.o: Enclave/%.cpp
+#  recipe to execute (from 'Makefile', line 256):
+	@$(CXX) $(SGX_COMMON_CXXFLAGS) $(Enclave_Cpp_Flags) -c $< -o $@
+	@echo "CXX  <=  $<"
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+App/Enclave_u.h: /opt/intel/sgxsdk/bin/x64/sgx_edger8r Enclave/Enclave.edl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 226):
+	@cd App && $(SGX_EDGER8R) --untrusted ../Enclave/Enclave.edl --search-path ../Enclave --search-path $(SGX_SDK)/include
+	@echo "GEN  =>  $@"
+
+Enclave/Enclave_t.c: Enclave/Enclave_t.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: .config_HW_DEBUG_x64
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := .config_HW_DEBUG_x64
+# automatic
+# | := 
+# automatic
+# < := .config_HW_DEBUG_x64
+# automatic
+# ^ := .config_HW_DEBUG_x64
+# automatic
+# ? := .config_HW_DEBUG_x64
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/13=15%
+#  recipe to execute (from 'Makefile', line 188):
+	@$(MAKE) target
+
+enclave.so: Enclave/Enclave_t.o Enclave/Enclave.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 262):
+	@$(CXX) $^ -o $@ $(Enclave_Link_Flags)
+	@echo "LINK =>  $@"
+
+.PHONY: all run target clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/opt/intel/sgxsdk/bin/x64/sgx_edger8r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Enclave/Enclave_t.h: /opt/intel/sgxsdk/bin/x64/sgx_edger8r Enclave/Enclave.edl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 246):
+	@cd Enclave && $(SGX_EDGER8R) --trusted ../Enclave/Enclave.edl --search-path ../Enclave --search-path $(SGX_SDK)/include
+	@echo "GEN  =>  $@"
 
 Enclave/Enclave.o: Enclave/Enclave_t.h
 #  Implicit rule search has not been done.
@@ -459,39 +850,79 @@ Enclave/Enclave.edl:
 #  Modification time never checked.
 #  File has not been updated.
 
-.config_HW_DEBUG_x64:
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := .config_HW_DEBUG_x64
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=5/18=28%
-#  recipe to execute (from 'Makefile', line 220):
-	@rm -f .config_* $(App_Name) $(Enclave_Name) $(Signed_Enclave_Name) $(App_Cpp_Objects) App/Enclave_u.* $(Enclave_Cpp_Objects) Enclave/Enclave_t.*
-	@touch .config_$(Build_Mode)_$(SGX_ARCH)
-
 # Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-12-26 14:55:09.608269969
+#  File has been updated.
+#  Successfully updated.
+
+enclave.signed.so: enclave.so
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 266):
+	@$(SGX_ENCLAVE_SIGNER) sign -key Enclave/Enclave_private_test.pem -enclave $(Enclave_Name) -out $@ -config $(Enclave_Config_File)
+	@echo "SIGN =>  $@"
+
+app: App/Enclave_u.o App/App.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 240):
+	@$(CXX) $^ -o $@ $(App_Link_Flags)
+	@echo "LINK =>  $@"
+
+App/Enclave_u.o: App/Enclave_u.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 232):
+	@$(CC) $(SGX_COMMON_CFLAGS) $(App_C_Flags) -c $< -o $@
+	@echo "CC   <=  $<"
+
+# Not a target:
+App/App.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 215):
+	@$(CURDIR)/$(App_Name)
+	@echo "RUN  =>  $(App_Name) [$(SGX_MODE)|$(SGX_ARCH), OK]"
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 272):
+	@rm -f .config_* $(App_Name) $(Enclave_Name) $(Signed_Enclave_Name) $(App_Cpp_Objects) App/Enclave_u.* $(Enclave_Cpp_Objects) Enclave/Enclave_t.*
+
+Enclave/Enclave_t.o: Enclave/Enclave_t.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 252):
+	@$(CC) $(SGX_COMMON_CFLAGS) $(Enclave_C_Flags) -c $< -o $@
+	@echo "CC   <=  $<"
 
 target: app enclave.signed.so
 #  Phony target (prerequisite of .PHONY).
@@ -501,21 +932,23 @@ target: app enclave.signed.so
 #  recipe to execute (from 'Makefile', line 201):
 	@echo "The project has been built in debug hardware mode."
 
-.PHONY: all run target clean
+.config_HW_DEBUG_x64:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-12-26 14:54:56.640250962
+ 
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 220):
+	@rm -f .config_* $(App_Name) $(Enclave_Name) $(Signed_Enclave_Name) $(App_Cpp_Objects) App/Enclave_u.* $(Enclave_Cpp_Objects) Enclave/Enclave_t.*
+	@touch .config_$(Build_Mode)_$(SGX_ARCH)
 
-enclave.so: Enclave/Enclave_t.o Enclave/Enclave.o
+App/Enclave_u.c: App/Enclave_u.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 262):
-	@$(CXX) $^ -o $@ $(Enclave_Link_Flags)
-	@echo "LINK =>  $@"
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=0/63=0%
+# Load=22/1024=2%, Rehash=0, Collisions=2/64=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -525,9 +958,9 @@ enclave.so: Enclave/Enclave_t.o Enclave/Enclave.o
 # strcache buffers: 1 (0) / strings = 38 / storage = 458 B / avg = 12 B
 # current buf: size = 8162 B / used = 458 B / count = 38 / avg = 12 B
 
-# strcache performance: lookups = 84 / hit rate = 54%
+# strcache performance: lookups = 88 / hit rate = 56%
 # hash-table stats:
-# Load=38/8192=0%, Rehash=0, Collisions=0/84=0%
-# Finished Make data base on Wed Jun 22 19:39:49 2022
+# Load=38/8192=0%, Rehash=0, Collisions=1/88=1%
+# Finished Make data base on Tue Dec 27 18:55:26 2022
 
  
